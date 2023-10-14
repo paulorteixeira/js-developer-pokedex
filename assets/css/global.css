@@ -1,24 +1,70 @@
 * {
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #f6f8fc;
+  background-color: #f6f8fc;
 }
 
 .content {
-    width: 100vw;
-    height: 100vh;
-    padding: 1rem;
-    background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+  background-color: #fff;
 }
 
 @media screen and (min-width: 992px) {
-    .content {
-        max-width: 992px;
-        height: auto;
-        margin: 1rem auto;
-        border-radius: 1rem;
-    }
+  .content {
+    max-width: 992px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 1rem;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.overlay.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.overlay-c {
+  background-color: yellow;
+  padding: 5px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: yellow;
+}
+.overlay-d {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-style: solid;
+
+  border-color: white;
+}
+#TitleName {
+  margin: 5px;
+  align-content: space-between;
+}
+#TitleName p {
+  display: inline;
+}
+.overlay-d img {
+  max-width: 226px;
+  max-height: 218px;
+}
+#contentOver {
+  max-width: 256px;
 }
